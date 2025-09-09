@@ -1,0 +1,128 @@
+{
+	"info": {
+		"_postman_id": "5ff111ad-c147-4af3-b5cd-1aa72ad2c821",
+		"name": "Prueba Técnica Parte 1 – Fondos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "45943190",
+		"_collection_link": "https://warped-crescent-410419.postman.co/workspace/GFT~06f8e740-77b1-4374-b92d-8825b908b90f/collection/45943190-5ff111ad-c147-4af3-b5cd-1aa72ad2c821?action=share&source=collection_link&creator=45943190"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/clients/c-12345/subscriptions",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fundId\": \"3\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/clients/c-12345/subscriptions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clients",
+						"c-12345",
+						"subscriptions"
+					]
+				},
+				"description": "Generated from cURL: curl --location 'http://localhost:8080/clients/c-12345/subscriptions' \\\r\n--header 'Content-Type: application/json' \\\r\n--data '{\r\n    \"fundId\": \"3\"\r\n}'"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/clients/c-12345/transactions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/clients/c-12345/transactions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clients",
+						"c-12345",
+						"transactions"
+					]
+				},
+				"description": "Generated from cURL: curl --location 'http://localhost:8080/clients/c-12345/transactions'"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/clients/c-12345/subscriptions/3",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/clients/c-12345/subscriptions/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clients",
+						"c-12345",
+						"subscriptions",
+						"3"
+					]
+				},
+				"description": "Generated from cURL: curl --location --request DELETE 'http://localhost:8080/clients/c-12345/subscriptions/3'"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/clients/c-12345/subscriptions",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fundId\": \"4\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/clients/c-12345/subscriptions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clients",
+						"c-12345",
+						"subscriptions"
+					]
+				},
+				"description": "Generated from cURL: curl --location 'http://localhost:8080/clients/c-12345/subscriptions' \\\r\n--header 'Content-Type: application/json' \\\r\n--data '{\r\n    \"fundId\": \"4\"\r\n}'"
+			},
+			"response": []
+		}
+	]
+}
